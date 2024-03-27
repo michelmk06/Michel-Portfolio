@@ -95,9 +95,15 @@ body {
 }
 .contact p {
   text-align: center;
+  font-family: var(--font-family);
+  font-size: 20px;
   color: #fff;
 }
-
+.contact p span {
+  font-family: var(--main-clr);
+  font-size: 26px;
+  color: var(--cyan);
+}
 .input-field {
   margin-bottom: 2px;
 }
