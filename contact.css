@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Parisienne&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sacramento&display=swap");
+
+:root {
+  --bg-clr: #001000;
+  --scd-bg-clr: #003300;
+  --text-clr: #ededed;
+  --main-clr: #006600;
+  --cyan: #006600;
+  --font-size: 16px;
+  --font-family: "roboto", sans-serif;
+  --scd-font-family: "Parisienne", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: var(--font-size);
+  overflow-x: hidden;
+}
+
+body {
+  background: url("photo/best-free-coding-courses-classes-tutorials-certification-training-online.jpg")
+    center/cover no-repeat;
+  -webkit-filter: brightness(100%);
+  backdrop-filter: brightness(10%) blur(10px);
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 8px 64px;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 40px;
+  color: var(--text-clr);
+  font-weight: 900;
+  font-family: var(--scd-font-family);
+}
+
+.logo span {
+  font-size: 50px;
+  color: var(--cyan);
+  font-weight: 900;
+  font-family: var(--scd-font-family);
+}
+
+.navbar a {
+  font-size: 20px;
+  color: var(--text-clr);
+  font-weight: 500;
+  margin: 15px;
+  font-family: var(--font-family);
+  justify-content: space-between;
+  transition: 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: var(--cyan);
+  font-weight: bold;
+}
+.contact {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.contact h2 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: var(--text-clr);
+  font-family: var(--font-family);
+}
+.contact h2 span {
+  font-size: larger;
+  font-family: var(--scd-font-family);
+  color: var(--cyan);
+}
+.contact p {
+  text-align: center;
+  color: #fff;
+}
+
+.input-field {
+  margin-bottom: 2px;
+}
+
+.item {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid;
+  border-radius: 50px;
+  font-size: 16px;
+}
+.align-item {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-box {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  flex-direction: row;
+  height: auto; /* Adjust height as needed */
+}
+
+.textarea-field {
+  position: relative;
+  width: 100%; /* Adjust to leave space for buttons */
+}
+
+.textarea-field textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 16px;
+}
+
+.btn-box .btn {
+  padding: 0;
+  align-items: center;
+  background-color: transparent;
+  border: 2px solid var(--cyan);
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-clr);
+  font-family: var(--font-family);
+  cursor: pointer;
+  width: 120px;
+  margin-left: auto;
+}
+
+.btn-box .btn:hover::before {
+  width: 100%;
+}
